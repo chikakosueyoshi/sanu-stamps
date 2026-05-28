@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>SANU Stamps Card</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #e8e8e8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* A6: 105mm × 148mm → 印刷用に96dpi換算 */
+    .card {
+      width: 397px;
+      height: 559px;
+      background: #111;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 36px;
+      gap: 0;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+
+    .brand {
+      font-size: 11px;
+      letter-spacing: 0.35em;
+      color: #e85c1a;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .qr-wrap {
+      background: #fff;
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 24px;
+    }
+
+    .qr-wrap img {
+      width: 200px;
+      height: 200px;
+      display: block;
+    }
+
+    .title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.04em;
+      text-align: center;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .desc {
+      font-size: 11px;
+      color: #888;
+      text-align: center;
+      line-height: 1.8;
+      margin-bottom: 28px;
+    }
+
+    .url {
+      font-size: 9px;
+      color: #555;
+      letter-spacing: 0.02em;
+      text-align: center;
+      word-break: break-all;
+    }
+
+    .divider {
+      width: 32px;
+      height: 2px;
+      background: #e85c1a;
+      border-radius: 2px;
+      margin: 20px auto;
+    }
+
+    @media print {
+      body {
+        background: none;
+        margin: 0;
+      }
+      .card {
+        box-shadow: none;
+        border-radius: 0;
+        width: 105mm;
+        height: 148mm;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="brand">SANU</div>
+
+    <div class="qr-wrap">
+      <img src="qr.png" alt="QR Code">
+    </div>
+
+    <div class="title">Slack スタンプを<br>ダウンロードできます</div>
+
+    <div class="divider"></div>
+
+    <div class="desc">
+      QRコードを読み取ると<br>
+      SANUのカスタムスタンプ一覧ページへ<br>
+      アクセスできます
+    </div>
+
+    <div class="url">https://chikakosueyoshi.github.io/sanu-stamps/</div>
+  </div>
+</body>
+</html>
