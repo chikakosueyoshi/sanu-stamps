@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SANU Slack Stamps</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #111;
+      color: #fff;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      min-height: 100vh;
+      padding: 48px 24px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    header .logo {
+      font-size: 13px;
+      letter-spacing: 0.3em;
+      color: #e85c1a;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      font-size: 14px;
+      color: #888;
+      line-height: 1.8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px 16px;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      background: #222;
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+
+    .card .name {
+      font-size: 12px;
+      color: #999;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .card a {
+      display: inline-block;
+      background: #e85c1a;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      padding: 8px 20px;
+      border-radius: 100px;
+      transition: background 0.2s;
+    }
+
+    .card a:hover {
+      background: #ff6e2a;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 64px;
+      font-size: 12px;
+      color: #444;
+      letter-spacing: 0.1em;
+    }
+
+    .how-to {
+      max-width: 600px;
+      margin: 0 auto 48px;
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 24px 28px;
+      font-size: 13px;
+      color: #aaa;
+      line-height: 2;
+    }
+
+    .how-to h2 {
+      font-size: 13px;
+      color: #e85c1a;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .how-to ol {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">SANU</div>
+    <h1>Slack Stamps</h1>
+    <p>SANUのSlackスタンプをダウンロードできます。<br>各スタンプの「Download」ボタンから画像を保存してください。</p>
+  </header>
+
+  <div class="how-to">
+    <h2>使い方</h2>
+    <ol>
+      <li>スタンプ画像をダウンロード</li>
+      <li>Slackを開き、絵文字ピッカー右上の「絵文字を追加する」をクリック</li>
+      <li>「カスタム絵文字を追加する」でダウンロードした画像をアップロード</li>
+      <li>好きな名前をつけて登録完了</li>
+    </ol>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="sanu.png" alt="SANU">
+      <div class="name">SANU</div>
+      <a href="sanu.png" download="sanu.png">Download</a>
+    </div>
+
+    <div class="card">
+      <img src="livewithnature.png" alt="Live with Nature">
+      <div class="name">Live with Nature</div>
+      <a href="livewithnature.png" download="livewithnature.png">Download</a>
+    </div>
+
+    <div class="card">
+      <img src="2ndhome.png" alt="2nd Home">
+      <div class="name">2nd Home</div>
+      <a href="2ndhome.png" download="2ndhome.png">Download</a>
+    </div>
+
+    <div class="card">
+      <img src="hitokun.png" alt="hitokun">
+      <div class="name">hitokun</div>
+      <a href="hitokun.png" download="hitokun.png">Download</a>
+    </div>
+
+    <div class="card">
+      <img src="red.png" alt="red">
+      <div class="name">red</div>
+      <a href="red.png" download="red.png">Download</a>
+    </div>
+
+    <div class="card">
+      <img src="chakasu.png" alt="chakasu">
+      <div class="name">chakasu</div>
+      <a href="chakasu.png" download="chakasu.png">Download</a>
+    </div>
+
+    <div class="card">
+      <img src="lunch.png" alt="lunch">
+      <div class="name">lunch</div>
+      <a href="lunch.png" download="lunch.png">Download</a>
+    </div>
+
+  </div>
+
+  <footer>SANU · 2nd Home in Nature</footer>
+
+</body>
+</html>
